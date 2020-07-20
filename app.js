@@ -90,12 +90,29 @@ class DrumKit {
       switch (muteIndex) {
         case "0":
           this.kickAudio.volume = 0;
+          this.kickAudio.className.add("fas fa-volume-mute");
           break;
         case "1":
           this.kickAudio.volume = 0;
           break;
         case "2":
           this.kickAudio.volume = 0;
+          break;
+
+        default:
+          break;
+      }
+    } else {
+      switch (muteIndex) {
+        case "0":
+          this.kickAudio.volume = 1;
+          this.kickAudio.className.add("fas fa-volume-mute");
+          break;
+        case "1":
+          this.kickAudio.volume = 1;
+          break;
+        case "2":
+          this.kickAudio.volume = 1;
           break;
 
         default:
